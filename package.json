@@ -1,0 +1,24 @@
+{
+  "name": "kompetisi-indonesia-static",
+  "version": "1.0.0",
+  "description": "pug and less project for kompetisi indonesia static pages",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/yussan/kompetisiindonesia-design.git"
+  },
+  "author": "yussan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/yussan/kompetisiindonesia-design/issues"
+  },
+  "homepage": "https://gitlab.com/yussan/kompetisiindonesia-design#README",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp-less": "^3.3.0"
+  }
+}
