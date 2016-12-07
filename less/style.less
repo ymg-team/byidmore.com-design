@@ -64,31 +64,37 @@ navbar {
   }
 
   p{
-    margin:0;
-    padding:0;
-  };
+     margin: 0;
+     padding: 1em 1.5em;
+     font-size: 2em;
+   };
 }
 
 .bubbletext--project{
   position: relative;
   left: 100%;
-  margin-left: -30em;
-  top: 17em;
-  width: 15em;
+  margin-left: -40em;
+  top: 22em;
+  width: 20em;
 
   .arrow-right{
     position: absolute;
-    left:99%;
+    left: 99.5%;
+    top: 4.5em;
   }
 }
 
 .bubbletext--introduce{
-  top: 30%;
-  left: 80%;
+  top: 50%;
+  left: 60%;
+  width: 20em;
+  height: 8em;
+  margin-top: -8em;
 
   .arrow-left{
-    position:absolute;
-    left:-0.35em;
+    position: absolute;
+    left: -0.4em;
+    top: 4em;
   }
 }
 
@@ -96,6 +102,7 @@ navbar {
   width:30em;
   left: 50%;
   margin-left: -15em;
+  margin-top: 15em;
   top: 3em;
 
   .arrow-up{
@@ -117,6 +124,7 @@ navbar {
 .wrapper{
   margin:0 auto;
   width: 90%;
+  max-width: 1300px;
   display:table;
 }
 
@@ -141,21 +149,22 @@ navbar {
     width: 30em;
     left: 50%;
     margin-left: -15em;
-    position: relative;
+    position: absolute;
   };
 
   .object--moon1, .object--moon2{
     width:7em;
-    position:relative;
+    position:absolute;
   };
 
   .object--moon1{
-    top:-100px;
+    left: 3em;
+    margin-top: -10em;
   };
 
   .object--moon2{
-    top:100px;
-    left:45%;
+    right: 3em;
+    margin-top: 20em;
   };
 
 }
@@ -165,7 +174,7 @@ navbar {
   background-color: #14243b;
 
   h2{
-    font-size: 4em;
+    font-size: 7em;
   }
 }
 
@@ -200,7 +209,7 @@ navbar {
   overflow:hidden;
 
   h3.title{
-    font-size: 4em;
+    font-size: 7em;
     text-align: center;
     z-index: 30;
     position: relative;
@@ -236,13 +245,13 @@ navbar {
 
 .object-ufo{
   .background-object;
-  background-image:url('../images/img-1.png');
-  height:15em;
-  width:15em;
-  left: 50%;
-  margin-left: -7.5em;
-  position: absolute;
-  z-index: 10;
+    background-image: url(../images/img-1.png);
+    height: 12em;
+    width: 25em;
+    left: 50%;
+    margin-left: -12.5em;
+    position: absolute;
+    z-index: 10;
 }
 
 .object-astronaut-rope{
@@ -288,6 +297,7 @@ navbar {
   .bubbletext--product{
     margin-left: 8em;
     width: inherit;
+    height: 15em;
     position: initial;
     margin-top: -5em;
     border-radius:0.5em;
