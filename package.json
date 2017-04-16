@@ -1,5 +1,5 @@
 {
-  "name": "kompetisi-indonesia-static",
+  "name": "byidmore-static",
   "version": "1.0.0",
   "description": "pug and less project for kompetisi indonesia static pages",
   "main": "index.js",
@@ -21,5 +21,8 @@
   "devDependencies": {
     "browser-sync": "^2.18.2",
     "gulp-less": "^3.3.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
   }
 }
