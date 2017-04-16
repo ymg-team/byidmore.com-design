@@ -20,9 +20,8 @@
   "homepage": "https://gitlab.com/yussan/kompetisiindonesia-design#README",
   "devDependencies": {
     "browser-sync": "^2.18.2",
-    "gulp-less": "^3.3.0"
-  },
-  "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "gulp-pug": "^3.3.0"
   }
 }
