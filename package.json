@@ -1,27 +1,28 @@
 {
-  "name": "byidmore-static",
-  "version": "1.0.0",
-  "description": "pug and less project for kompetisi indonesia static pages",
+  "name": "grunt-pug-sass-boilerplate",
+  "version": "0.0.1",
+  "description": "boilerplate of Pug Sass project using Grunt",
   "main": "index.js",
   "scripts": {
-    "start": "gulp",
-    "build": "gulp less && gulp pug",
+    "start": "grunt",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/yussan/kompetisiindonesia-design.git"
+    "url": "git+ssh://git@gitlab.com/idmore/byidmore-design-2.git"
   },
-  "author": "yussan",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/yussan/kompetisiindonesia-design/issues"
+    "url": "https://gitlab.com/idmore/byidmore-design-2/issues"
   },
-  "homepage": "https://gitlab.com/yussan/kompetisiindonesia-design#README",
-  "devDependencies": {
-    "browser-sync": "^2.18.2",
-    "gulp": "^3.9.1",
-    "gulp-less": "^3.3.0",
-    "gulp-pug": "^3.3.0"
+  "homepage": "https://gitlab.com/idmore/byidmore-design-2#README",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
   }
 }
