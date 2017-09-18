@@ -73,8 +73,16 @@ module.exports = grunt => {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
   
-
+  let tasks = []
   //register default task
-  grunt.registerTask('default', ['pug', 'sass', 'uglify', 'browserSync', 'watch'])
+  if(process.env.NODE_ENV != 'production')
+  {
+    tasks = ['pug', 'sass', 'uglify', 'browserSync', 'watch'];
+  }else
+  {
+    tasks = ['pug', 'sass', 'uglify'];
+  }
+
+  grunt.registerTask('default', tasks)
 };
 
