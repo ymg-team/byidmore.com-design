@@ -3,6 +3,7 @@ module.exports = grunt => {
     pug: {
       compile: {
         options: {
+          pretty: true,
           data: {
             debug: true
           }
@@ -19,7 +20,7 @@ module.exports = grunt => {
     sass: {
       dist: {
         options: {
-          style: 'inline'
+          style: 'compressed'
         },
         files: [{
           src: '*.sass',
