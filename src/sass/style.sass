@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,700|Lato:300i,400,700');
-
+@import consts/colors
+@import ../css/bootstrap-grid-min
+@import partials/navigation
+@import partials/cards
 body 
   padding: 0
   margin: 0
   font-family: lato
 article
   font-family: 'Droid serif'
+a
+  color: $gray-dark
+  &:hover 
+    color: $gray-main
+.wrapper 
+  margin: 2em 0 !important
 
-@import ../css/bootstrap-grid-min
-@import partials/navigation
+// helpers
+.no-margin 
+  margin: 0

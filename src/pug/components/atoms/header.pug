@@ -1,8 +1,28 @@
-header.col-sm-12
-  .container 
-    .col-sm-12
-      | this is nav
-  .container
-    nav 
+header
+  nav.container 
+    .row
       .col-sm-12
-        | this is navbar
+        .top
+          .left
+            .logo.menu
+              a(href="/")
+                img(src="./images/logo-white.png")
+                span.text ACADEMY
+            .menu 
+              | this is menu
+          .right
+            .menu 
+    .row 
+      .col-sm-12      
+        .bottom
+          ul.horizontal-list
+            li 
+              a(href='#') HOME
+            li.active
+              a(href='#') ACADEMY
+            li
+              a(href='#') STORIES
+            li
+              a(href='#') OUR WORKS
+            li
+              a(href='#') CREW

@@ -3,6 +3,54 @@
 header 
   background-color: $blue-main
   color: $white-main
+  a 
+    color: $white-blue
+    &:hover 
+      text-decoration: none
+      color: $white-main
+  nav
+    padding: 0.5em 0
+    .left, .right 
+      width: 50%
+    .left 
+      float: left
+    .right
+      float: right
+    .top, .bottom
+      padding: 10px 0
+    .logo
+      a 
+        img
+          height: 40px
+          margin-right: 0.2em
+        color: $white-main 
+        font-size: 2em
+        text-decoration: none
+        font-weight: bold
+        span:before 
+          display: inline
+          content: ''
+          height: 10px
+          margin: 10px
+          border-left: 1px solid #FFF
+    .menu 
+      &:first-child
+        margin-right: 0
+      display: inline-block
+      margin-right: 0.5em
 footer
   background-color: $blue-dark
   color: $white-main
+  padding: 20px 0
+ul.horizontal-list
+  list-style: none
+  padding: 0
+  margin: 0
+  li
+    display: inline
+    margin-left: 10px
+    &:first-child
+      margin-left: 0
+    &.active 
+      a
+        color: $white-main
