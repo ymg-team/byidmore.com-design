@@ -1,5 +1,6 @@
 # byidmore.com web design
-This web design build for https://byidmore.com
+Live preview available on https://byidmore2.netlify.com/ .
+This web design build for https://byidmore.com 
 
 ## First time
 After clone this repo to your local, start install developmet tool using this command
