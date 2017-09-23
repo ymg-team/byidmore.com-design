@@ -1,0 +1,72 @@
+@import ../consts/colors
+
+header 
+  background-color: $blue-main
+  color: $white-main
+  a 
+    color: $white-blue
+    &:hover, &:focus
+      text-decoration: none
+      color: $white-main
+  nav
+    padding: 0.5em 0
+    .left 
+      display: flex;
+      align-items: center;
+      float: left
+      width: calc(100% - 50px)
+    .right
+      display: flex;
+      align-items: center;
+      float: right
+      width: 50px
+    .top, .bottom
+      padding: 10px 0
+      display: flex 
+      align-items: center
+    .logo
+      a 
+        img
+          height: 40px
+          margin-right: 0.2em        
+    .brand
+      margin-left: 1em
+      a
+        &:before 
+          display: content
+          content: ''
+          height: 10px
+          margin: 10px
+          border-left: 1px solid #FFF 
+        color: $white-main 
+        font-size: 2em
+        text-decoration: none
+        font-weight: bold  
+    .socialmedia
+      a 
+        margin-right: 0.5em
+        font-size: 1.2em
+    .menu 
+      &:first-child
+        margin-right: 0
+      display: block 
+      float: left
+      margin-right: 0.5em
+footer
+  background-color: $blue-dark
+  color: $white-main
+  padding: 20px 0
+ul.horizontal-list, ul.vertical-list
+  list-style: none
+  padding: 0
+  margin: 0
+  li
+    &.active 
+      a
+        color: $white-main
+ul.horizontal-list 
+  li
+    display: inline
+    margin-left: 10px
+    &:first-child
+      margin-left: 0

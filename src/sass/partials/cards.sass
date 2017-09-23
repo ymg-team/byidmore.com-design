@@ -1,0 +1,55 @@
+@import ../consts/colors
+
+// author card
+.author 
+    display: flex
+    align-items: center
+    .author-image, .author-text 
+        float: left 
+    .author-image 
+        width: 50px
+        margin-right: 10px
+        img 
+            width: 100%
+            border-radius: 50px 
+    .author-text 
+        a
+            font-size: initial
+        color: $gray-main 
+        font-size: 13px
+        width: calc(100% - 50px - 10px)
+
+// meta post card
+.meta-post 
+    padding-top: 2em
+    h1 
+        font-size: 3.5em
+        padding: 0
+        margin: 0 
+        text-transform: capitalize
+    .devstack
+        .horizontal-list 
+            li.active 
+                img 
+                    border: 3px solid $blue-main
+            li
+                img 
+                    width: 30px
+                    border-radius: 30px
+                    border: solid 3px $gray-soft
+        .item 
+            display: inline-block 
+            margin-right: 2em
+    ul 
+        margin-top: 5px        
+
+// disqus thread
+#disqus_thread 
+    padding: 2em 0
+
+// post card
+.card-post 
+    .preview
+        height: 10em 
+        background-size: cover
+        margin-bottom: 1em

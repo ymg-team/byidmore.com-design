@@ -1,0 +1,34 @@
+-
+    var data = [
+    {
+        title: 'Ayo Berkebun',
+        image: 'images/sample-2.jpg',
+        user: {
+            avatar: 'images/avatar.jpg',
+            username: 'yussan'
+        }
+    },
+    {
+        title: 'Best peformance NodeJS apps using this single clousure',
+        image: 'images/sample-3.jpg',
+        user: {
+            avatar: 'images/sample-3.jpg',
+            username: 'yussan'
+        }
+    },
+    {
+        title: 'PM2 and keymetric i love that what about you, are you ready to use that',
+        image: 'images/sample-4.jpg',
+        user: {
+            avatar: 'images/sample-4.jpg',
+            username: 'yussan'
+        }
+    }
+    ]
+
+.container 
+    .row 
+        .related-post
+            include ../atoms/card-post
+            each val, index in data
+                +card-post(val) 

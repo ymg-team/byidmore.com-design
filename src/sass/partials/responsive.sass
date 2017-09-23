@@ -1,0 +1,12 @@
+@import 'responsive/navigations'
+@import 'responsive/posts'
+
+@media only screen and (max-width: 543px)
+    @include header-nav-mobile()
+    @include post-mobile()
+
+@media only screen and (min-width: 544px) and (max-width: 767px)
+    @include header-nav-mobile()
+    @include post-mobile()
+    
+// @media only screen and (min-width: 544px) and (max-width: 767px)

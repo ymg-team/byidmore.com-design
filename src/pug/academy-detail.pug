@@ -1,0 +1,92 @@
+extends layouts/default
+
+block title 
+    title Unique Notification System Using Realtime DB Firebase
+
+block content 
+    .container
+        .row
+            .col-md-10.col-md-push-1
+                include ./components/atoms/card-author
+                include ./components/atoms/card-meta-post
+        #index 
+            button#btn-index.btn.btn-circle.btn-orange.fa.fa-ellipsis-h(title="index")
+            .index-title Index
+            ul.vertical-list 
+                li.h2
+                    a(href="") This is Heading 2
+                li.h3 
+                    a(href="") This is Heading 3
+                li.h3 
+                    a(href="") This is Heading 3
+                li.h2 
+                    a(href="") Long text fro everyone haha hahalets read it
+    article.post-content.col-md-12 
+        figure
+            img(src="images/sample-1.jpg")
+            figcaption Photo 1 by Idmore
+    .container
+        article.post-content.row
+            .col-md-8.col-md-push-2
+                iframe(src="https://www.youtube.com/embed/1w-oQ-i1XB8" frameborder="0" allowfullscreen)
+
+                p 
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla malesuada cursus tellus vel tincidunt. In libero eros, tristique a vestibulum quis, hendrerit nec orci. Nam ac sapien a justo eleifend sollicitudin. Curabitur tellus urna, pharetra id varius at, maximus efficitur tortor. Pellentesque vel odio dignissim, tincidunt mauris quis, vehicula nisi. Nam tellus augue, ultricies vel dictum sit amet, malesuada at massa. Mauris enim tellus, laoreet at efficitur eget, lobortis a tellus. Etiam ante arcu, iaculis id finibus et, malesuada non tortor. Donec consectetur lorem et porttitor rhoncus. Mauris ligula lacus, blandit in neque a, euismod posuere purus. Nullam consequat facilisis lorem et tincidunt.
+                    br
+                    | Maecenas est nisl, porttitor eget consectetur quis, feugiat id felis. Praesent vulputate quam pharetra tincidunt viverra. In hac habitasse platea dictumst. In ut urna sed nunc maximus finibus. Nam feugiat est augue, placerat finibus arcu luctus nec. Nunc auctor id tortor at tempus. Suspendisse egestas, leo sit amet egestas luctus, risus nibh ultricies ante, ut aliquam tortor sapien pharetra libero. Nam mi nisl, fermentum sed euismod tristique, tincidunt id odio. Proin pharetra neque vel erat vestibulum feugiat. Nam accumsan consequat blandit. Quisque iaculis mauris vitae pellentesque pulvinar.
+                    br
+                    | Donec eleifend lorem eu elementum bibendum. Integer ut mi odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed rhoncus quam varius felis placerat ultrices. Nulla nibh arcu, lacinia non ligula sed, elementum suscipit elit. Phasellus eget feugiat arcu. Nam ac ornare purus.
+                    br
+                    | Nunc aliquam euismod sem, vitae lacinia risus tempus nec. Pellentesque id tincidunt erat. Nunc viverra quam eu orci consectetur ultrices. Cras convallis dignissim ante, vel gravida eros imperdiet eget. Nam venenatis, sapien sed pretium mollis, mauris magna mattis orci, at suscipit metus orci sit amet quam. In tempus magna id lectus ullamcorper elementum. Morbi congue semper magna, non mattis ipsum elementum ut.
+
+                    figure 
+                        img(src="images/sample-2.jpg")
+                        figcaption Photo 2 by Idmore
+
+                    | Aenean cursus rutrum magna non malesuada. Cras at sem ac enim gravida mollis id non quam. Pellentesque scelerisque purus mi, at fringilla magna maximus in. Nam odio purus, pellentesque at consectetur quis, dignissim gravida turpis. Mauris ullamcorper urna nisi, ut malesuada ex ultricies at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam mi nisl, aliquam eget mauris vel, porta tempus mi. Ut sagittis diam suscipit magna ultricies, vitae egestas leo vehicula. Cras vulputate lectus et nunc rutrum, a dignissim mauris maximus. Nullam posuere dapibus tellus. Nullam vitae lorem pretium, tempor velit a, convallis felis. Mauris sed risus pellentesque, mattis augue nec, tempus augue.
+                    
+                    h2 This is heading 2
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla malesuada cursus tellus vel tincidunt. In libero eros, tristique a vestibulum quis, hendrerit nec orci. Nam ac sapien a justo eleifend sollicitudin. Curabitur tellus urna, pharetra id varius at, maximus efficitur tortor. Pellentesque vel odio dignissim, tincidunt mauris quis, vehicula nisi.
+                    
+                    h3 This is heading 3
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla malesuada cursus tellus vel tincidunt. In libero eros, tristique a vestibulum quis, hendrerit nec orci. Nam ac sapien a justo eleifend sollicitudin. Curabitur tellus urna, pharetra id varius at, maximus efficitur tortor. Pellentesque vel odio dignissim, tincidunt mauris quis, vehicula nisi. Nam tellus augue, ultricies vel dictum sit amet, malesuada at massa. Mauris enim tellus, laoreet at efficitur eget, lobortis a tellus. Etiam ante arcu, iaculis id finibus et, malesuada non tortor. Donec consectetur lorem et porttitor rhoncus. Mauris ligula lacus, blandit in neque a, euismod posuere purus. Nullam consequat facilisis lorem et tincidunt.
+
+                    script(src="https://gist.github.com/kyawkyawsoezhu/3758173c37e16cedc84313b88d9f15ff.js")
+
+    include components/molecules/related-posts
+    
+    .container
+        .row
+            .col-md-10.col-md-push-1
+                #disqus_thread
+    
+    script. 
+        //- index handler
+        let showIndex = false;
+        const index = document.getElementById('index')
+        const btnIndex = document.getElementById('btn-index')
+        btnIndex
+        btnIndex.addEventListener('click', () => {
+            showIndex = !showIndex 
+            if(showIndex)
+            {
+                index.style.left = '0';
+                btnIndex.style.right = '-20px';
+            }else 
+            {
+                index.style.left = '-250px';
+                btnIndex.style.right = '-50px';
+            }
+        });    
+
+        //- disqus
+        var disqus_config = function () {
+            this.page.url = 'https://byidmore/academy/ready-to-open-api-23423';
+            this.page.identifier = 'news';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://idmore.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
