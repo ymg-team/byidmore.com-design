@@ -1,0 +1,21 @@
+mixin card-post(data)
+    .col-md-4.col-sm-2
+        .card-post
+            .preview(style="background-image:url('"+data.image+"')") 
+            .content
+                .tag
+                    ul.horizontal-list 
+                        li 
+                            a(href="") Javascript
+                        li 
+                            a(href="") Node JS 
+                a 
+                    h2 #{data.title}
+                .author 
+                    .author-image
+                        img(src="images/avatar.jpg")
+                    .author-text 
+                        a(href="") Yusuf Akhsan H. (yussan)
+                        .meta
+                        .text-muted
+                            | Posted 2 days ago - 6 mins read

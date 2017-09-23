@@ -10,7 +10,7 @@ block content
                 include ./components/atoms/card-author
                 include ./components/atoms/card-meta-post
         #index 
-            button#btn-index.btn.btn-circle.btn-blue(title="index") i
+            button#btn-index.btn.btn-circle.btn-orange.fa.fa-ellipsis-h(title="index")
             .index-title Index
             ul.vertical-list 
                 li.h2
@@ -22,12 +22,12 @@ block content
                 li.h2 
                     a(href="") Long text fro everyone haha hahalets read it
     article.post-content.col-md-12 
-        figure.cover
+        figure
             img(src="images/sample-1.jpg")
             figcaption Photo 1 by Idmore
     .container
         article.post-content.row
-            .col-md-10.col-md-push-1
+            .col-md-8.col-md-push-2
                 iframe(src="https://www.youtube.com/embed/1w-oQ-i1XB8" frameborder="0" allowfullscreen)
 
                 p 
@@ -53,6 +53,8 @@ block content
 
                     script(src="https://gist.github.com/kyawkyawsoezhu/3758173c37e16cedc84313b88d9f15ff.js")
 
+    include components/molecules/related-posts
+    
     .container
         .row
             .col-md-10.col-md-push-1
@@ -63,14 +65,17 @@ block content
         let showIndex = false;
         const index = document.getElementById('index')
         const btnIndex = document.getElementById('btn-index')
+        btnIndex
         btnIndex.addEventListener('click', () => {
             showIndex = !showIndex 
             if(showIndex)
             {
                 index.style.left = '0';
+                btnIndex.style.right = '-20px';
             }else 
             {
-                index.style.left = '-230px';
+                index.style.left = '-250px';
+                btnIndex.style.right = '-50px';
             }
         });    
 
